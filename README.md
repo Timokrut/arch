@@ -1,8 +1,3 @@
-<h1 align="center"> :herb: ZProger Build :herb: </h1>
-
-<!-- BADGES -->
-</br>
-
 <p align="center">
   <img src="https://img.shields.io/github/issues/zproger/bspwm-dotfiles?style=for-the-badge">
   </br>
