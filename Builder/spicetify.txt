@@ -1,0 +1,24 @@
+# setup spicetify
+# install 
+curl -fsSL https://raw.githubusercontent.com/spicetify/cli/main/install.sh | sh
+
+# marketplace (y)
+os.system('y')
+
+# addons
+Shuffle+
+adblockify
+Spotify Group
+Power bar (altKey, space) -> change bind
+CSS EDITOR (fix Power bar theme)
+(
+#power-bar-container {
+  --power-bar-background-color: #232136;
+  --power-bar-main-text-color: #E0DEF4;
+  --power-bar-subtext-color: #E0DEF4;
+  --power-bar-active-background-color: #393552;
+  --power-bar-active-text-color: #EBBCBA;
+  --power-bar-border-color: #232136;
+}
+)
+ZIRO (rose-pine-moon)
