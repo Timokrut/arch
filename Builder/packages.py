@@ -20,12 +20,12 @@ DEV_PACKAGES = [
     "cheese", "screenkey", "timeshift", "pinta", "kdenlive", "wireshark-qt",
     "filezilla", "ghex", "keepassxc", "audacity", "gufw", "python-pywal",
     "bleachbit", "veracrypt", "homebank", "gtkhash", "gnome-firmware", "touche", "dconf-editor",
-    "neovim", "obs-studio", "telegram-desktop", "tmux", "youtube-dl", "code", "cowsay",
-    "deluge-gtk", "flameshot", "sqlitebrowser", "obsidian", "python-pip", "bpython", "ipython", "cloc", "spotify-launcher", "discord"
+    "neovim", "obs-studio", "telegram-desktop", "tmux", "youtube-dl", "cowsay",
+    "deluge-gtk", "flameshot", "sqlitebrowser", "obsidian", "python-pip", "bpython", "ipython", "cloc", "spotify-launcher"
 ]
 
 AUR_PACKAGES = [
-    "cava", "i3lock-color", "ptpython", "google-chrome"
+    "cava", "i3lock-color", "ptpython", "google-chrome", "visual-studio-code-bin-debug", "discord_arch_electron"
 ]
 
 GNOME_OFFICIAL_TOOLS = [
