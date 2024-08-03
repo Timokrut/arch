@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Define your API key (coinmarketcap)
+# https://pro.coinmarketcap.com/account
 API_KEY="your_api_key_here"
 
 # Python script as a multi-line string
