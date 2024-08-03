@@ -1,2 +1,39 @@
 #!/bin/bash
-python $HOME/Coding/crypto.py
+
+# Define your API key (coinmarketcap)
+API_KEY="your_api_key_here"
+
+# Python script as a multi-line string
+PYTHON_SCRIPT=$(cat <<END
+import requests
+import subprocess
+
+API_KEY = "$API_KEY"
+
+url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest'
+
+crypto_symbol = "BTC,ETH,ATOM"
+symbols = crypto_symbol.split(',')
+headers = {
+    "X-CMC_PRO_API_KEY": API_KEY,
+}
+
+params = {
+    "symbol": crypto_symbol,
+}
+
+response = requests.get(url, headers=headers, params=params)
+data = response.json()
+
+notification_message = ""
+for i in symbols:
+    price = round(data['data'][i]['quote']['USD']['price'], 2)
+    notification_message += f'{i} - {price} \$\\n'
+
+# Use subprocess to call notify-send
+subprocess.run(['notify-send', 'Crypto Prices', notification_message])
+END
+)
+
+# Execute the Python script
+python -c "$PYTHON_SCRIPT"
