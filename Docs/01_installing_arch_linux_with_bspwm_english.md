@@ -184,8 +184,8 @@ At the builder stage you will be prompted to install `DEV_PACKAGES`, these are n
 
 and build the shell using these commands:
 ```bash
-git clone https://github.com/Zproger/bspwm-dotfiles.git
-cd bspwm-dotfiles
+git clone https://github.com/Timokrut/arch.git
+cd arch
 python3 Builder/install.py
 ```
 
