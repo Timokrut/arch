@@ -184,8 +184,8 @@ exec bspwm
 
 и выполните сборку оболочки используя данные команды:
 ```bash
-git clone https://github.com/Zproger/bspwm-dotfiles.git
-cd bspwm-dotfiles
+git clone https://github.com/Timokrut/arch.git
+cd arch
 python3 Builder/install.py
 ```
 
