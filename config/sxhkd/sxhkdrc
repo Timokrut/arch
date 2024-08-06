@@ -59,6 +59,10 @@ XF86MonBrightness{Up,Down}
 Print
     flameshot gui
 
+# get prices of BTC, ETH, ATOM
+ctrl + shift + c
+  sh $HOME/bin/crypto_prices
+
 #
 #
 # BSPWM HOTKEYS
