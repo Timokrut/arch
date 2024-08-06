@@ -25,7 +25,7 @@ DEV_PACKAGES = [
 ]
 
 AUR_PACKAGES = [
-    "cava", "i3lock-color", "ptpython", "google-chrome", "y", 
+    "cava", "i3lock-color", "ptpython", "google-chrome", "visual-studio-code-bin", 
 ]
 
 GNOME_OFFICIAL_TOOLS = [
