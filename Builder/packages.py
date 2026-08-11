@@ -134,6 +134,7 @@ AUR_PACKAGES = [
     "anki",  # Программа для запоминания материала через карточки
     "light",  # TODO: Нужен для управления яркостью amd (bin/brightness)
     "google-chrome", # основной браузер 
-    "visual-studio-code-bin" # сюда можно поставить LiveShare 
+    "visual-studio-code-bin", # сюда можно поставить LiveShare 
+    "amneziavpn-bin" # vpn 
 ]
 
