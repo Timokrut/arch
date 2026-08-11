@@ -66,7 +66,10 @@ class SystemConfiguration:
     @staticmethod
     def __copy_bspwm_dotfiles():
         Logger.add_record("[+] Copy Dotfiles & GTK", status=LoggerStatus.SUCCESS)
-        os.system("cp -r config/* ~/.config/")
+
+        for config in Path("config").iterdir():
+            (Path.home() / ".config" / config.name).symlink_to(config.resolve()) 
+
         os.system("cp Xresources ~/.Xresources")
         os.system("cp gtkrc-2.0 ~/.gtkrc-2.0")
         os.system("cp -r local ~/.local")
