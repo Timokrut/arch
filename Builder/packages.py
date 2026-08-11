@@ -118,6 +118,7 @@ DEV_PACKAGES = [
     "ipython",  # Интерактивный режим Python
     "cloc",  # Посчитать количество строк кода
     "hexyl",  # Hex дампер
+    "github-cli" # Удобное CLI для работы с github
 ]
 
 AUR_PACKAGES = [
