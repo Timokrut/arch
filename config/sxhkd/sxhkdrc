@@ -1,9 +1,7 @@
-
-
 # reloads sxhkd configuration:
 super + Escape + r
     pkill -USR1 -x sxhkd; notify-send 'sxhkd' 'Reloaded config' -t 1500
-
+	
 # Launch Terminal
 super + Return
     alacritty
@@ -25,28 +23,23 @@ Shift_L + alt
     
 # Launch Rofi Menu
 super + {d,x}
-    {rofi -show drun,sh $HOME/bin/powermenu}
+    {setxkbmap -layout us;rofi -m -1 -show drun,setxkbmap -layout us; sh $HOME/bin/powermenu}
 
 # Launch Applications
-super + shift + {f,n,p,t,c,v,i,x,q,k,l,s,d}
+super + shift + {f,n,p,t,c,v,x,k,l,s,e,d}
 	{google-chrome-stable, \
 	thunar, \
 	pavucontrol, \
-	telegram-desktop, \
-	code, \
-	virtualbox, \
-	firefox --private-window, \
+	Telegram, \
+	setxkbmap -layout us; sh $HOME/bin/calculator, \
+	setxkbmap -layout us; alacritty -e sh $HOME/bin/timer}
 	sh $HOME/bin/xcolor-pick, \
-	sh $HOME/bin/bible, \
 	alacritty -e calcurse, \
 	sh $HOME/bin/screen-lock, \
 	spotify-launcher, \
+	setxkbmap -layout us; rofi -modi emoji -m -1 -show emoji, \
 	discord}
      
-# Select window to close
-ctrl + super + alt + k
-	{xkill}
-
 # Volume controls
 XF86Audio{RaiseVolume,LowerVolume,Mute}
     sh $HOME/bin/volume{ --up, --down, --toggle}
@@ -81,7 +74,6 @@ super + c
 super + space
 	bspc node -t "~"{floating,tiled}
 
-
 #
 # state/flags
 #
@@ -98,7 +90,6 @@ alt + {_,shift + }Tab
 #
 # focus/swap
 #
-
 
 # focus the last node/desktop
 super + {grave,Tab}
@@ -135,11 +126,6 @@ super + control {h,j,k,l}
 # Send the window to another edge of the screen
 super + {_,alt + }{h,j,k,l}
     bspc node -{f,s} {west,south,north,east}
-
-# move a floating window
-# TODO: Вызывает конфликт с другими комбинациями 
-#super + x + {h,j,k,l}
-# 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 # set the node flags
 super + ctrl + {m,x,y,z}

@@ -1,12 +1,13 @@
 import os
 
+
 class PatchSystemBugs:
     @staticmethod
     def enable_all_patches():
         PatchSystemBugs.__fix_xterm_error_in_thunar()
         PatchSystemBugs.__make_fish_the_default()
         PatchSystemBugs.__assign_permissions_to_configs()
-
+        
     @staticmethod
     def __fix_xterm_error_in_thunar():
         os.system("sudo ln -sf /usr/bin/alacritty /usr/bin/xterm")
@@ -18,3 +19,4 @@ class PatchSystemBugs:
     @staticmethod
     def __assign_permissions_to_configs():
         os.system("sudo chmod -R 700 ~/.config/*")
+

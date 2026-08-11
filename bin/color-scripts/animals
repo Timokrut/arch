@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-# ============
-# ASCII ANIMAL
-# ============
-
 # ANSI COLOUR CODES
 RD='\x1B[0;31m'
 GR='\x1B[0;32m'

@@ -7,7 +7,7 @@ CARD=$(basename "$(find /sys/class/backlight/* | head -n 1)")
 # Increase brightness
 inc_backlight() {
 	if [[ "$CARD" == *"intel_"* ]]; then
-		xbacklight -inc 5
+		brightnessctl --device "$CARD" set +5%
 	else
 		light -A 5
 	fi
@@ -16,7 +16,7 @@ inc_backlight() {
 # Decrease brightness
 dec_backlight() {
 	if [[ "$CARD" == *"intel_"* ]]; then
-		xbacklight -dec 5
+		brightnessctl --device "$CARD" set 5-%
 	else
 		light -U 5
 	fi

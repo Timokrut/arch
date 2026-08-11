@@ -2,7 +2,6 @@ import os
 import sys
 from PIL import Image
 
-
 wallpaper_path = None
 monitor_size = "1920x1080"
 

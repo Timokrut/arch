@@ -1,8 +1,5 @@
 #!/bin/sh
 
-# Author: gutterslob
-# Source: http://crunchbang.org/forums/viewtopic.php?pid=130590#p130590
-
 initializeANSI()
 {
   esc=""

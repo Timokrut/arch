@@ -112,7 +112,7 @@ echo “arch” > /etc/hostname
 passwd
 
 # Добавляем нового пользователя и настраиваем права
-useradd -m -G wheel,users -s /bin/bash user
+useradd -m -G wheel,users,video -s /bin/bash user
 passwd user
 systemctl enable dhcpcd
 systemctl enable iwd.service
@@ -168,7 +168,7 @@ reboot
 и в дальнейшем вам будет предложено войти в пользователя, введя логин и пароль. После авторизации выполняем следующее:
 
 ```bash
-sudo pacman -Sy
+sudo pacman -Syu
 sudo pacman -S xorg bspwm sxhkd xorg-xinit xterm git python3
 
 # Настройка xinitrc
@@ -192,7 +192,7 @@ python3 Builder/install.py
 В меню необходимо предоставить разрешение на установку `dotfiles`, обновление баз, установку `BASE_PACKAGES`. Остальные пункты выбирайте самостоятельно.
 Такое разделение опций позволяет выполнить только необходимое действие, к примеру лишь заменить `dotfiles` либо установить актуальные `DEV_PACKAGES` пакеты.
 
-Если вы все сделали правильно, то после запуска вы получите готовую оболочку BSPWM.
+Если вы все сделали правильно, то после запуска вы получите готовую оболочку BSPWM. Не забудьте включить 3D-ускорение, если вы работаете под виртуальной машиной.
 ```bash
 startx
 ```

@@ -1,18 +1,4 @@
 #!/bin/bash
-#          ██              ██  ██
-#         ░██             ░██ ░██
-#   ██████░██  ██ ██   ██ ░██ ░██  ██████
-#  ██░░░░ ░██ ██ ░██  ░██ ░██ ░██ ██░░░░
-# ░░█████ ░████  ░██  ░██ ░██ ░██░░█████
-#  ░░░░░██░██░██ ░██  ░██ ░██ ░██ ░░░░░██
-#  ██████ ░██░░██░░██████ ███ ███ ██████
-# ░░░░░░  ░░  ░░  ░░░░░░ ░░░ ░░░ ░░░░░░
-#
-# ANSI color scheme script by pyratebeard
-# original `ghosts` script by pfh
-#
-# Initializing mod by lolilolicon from Archlinux
-#
  
 f=3 b=4
  for j in f b; do

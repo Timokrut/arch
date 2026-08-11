@@ -4,8 +4,10 @@ alias cls="clear"
 alias g="git"
 alias n="nvim"
 alias m="micro"
+alias cat="bat"
+alias feh="feh --scale-down"
 
-# TODO: Replace journal aliases after switching to OpenRC
+alias reflector_update="sudo reflector --latest 5 --sort rate --save /etc/pacman.d/mirrorlist"
 
 # Display critical errors
 alias syslog_emerg="sudo dmesg --level=emerg,alert,crit"
@@ -32,3 +34,4 @@ set -gx BROWSER /usr/bin/firefox
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
+

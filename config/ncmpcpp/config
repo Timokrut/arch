@@ -2,7 +2,7 @@
 # MPD
 # ---
 mpd_host = "127.0.0.1"
-mpd_port = "6600"
+mpd_port = "41122"
 mpd_crossfade_time = "2"
 
 # VISUAL
@@ -70,4 +70,3 @@ song_list_format = " {%t $R   $8%a$8}|{%f $R   $8%l$8} $8"
 song_status_format = "$b$6$7[$8      $7]$6 $2 $7{$8 %b }|{$8 %t }|{$8 %f }$7 $8"
 song_window_title_format = "Now Playing .."
 
-# execute_on_song_change = notify-send "Now Playing ♫" "$(mpc current)"

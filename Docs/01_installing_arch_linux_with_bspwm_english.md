@@ -112,7 +112,7 @@ echo "arch" > /etc/hostname
 passwd
 
 # Add a new user and configure permissions
-useradd -m -G wheel,users -s /bin/bash user
+useradd -m -G wheel,users,video -s /bin/bash user
 passwd user
 systemctl enable dhcpcd
 systemctl enable iwd.service
@@ -168,7 +168,7 @@ Before running these commands, log in as user. During the boot phase, the system
 and you will then be prompted to log in to the user by entering your username and password. After authorization, perform the following:
 
 ```bash
-sudo pacman -Sy
+sudo pacman -Syu
 sudo pacman -S xorg bspwm sxhkd xorg-xinit xterm git python3
 
 # Customize xinitrc
@@ -192,7 +192,7 @@ python3 Builder/install.py
 In the menu you need to give permission to install `dotfiles`, update bases, install `BASE_PACKAGES`. The rest of the options are up to you.
 This division of options allows you to perform only the necessary action, for example, just replace `dotfiles` or install current `DEV_PACKAGES` packages.
 
-If you have done everything correctly, you will get a ready BSPWM shell after launching.
+If you have done everything correctly, you will get a ready BSPWM shell after launching. Don't forget to enable 3D acceleration if you are working under a virtual machine.
 ```bash
 startx
 ```
