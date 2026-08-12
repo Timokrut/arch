@@ -5,6 +5,7 @@ alias g="git"
 alias n="nvim"
 alias m="micro"
 alias cat="bat"
+alias ccat="bat --style=plain --paging=never"
 alias feh="feh --scale-down"
 
 alias reflector_update="sudo reflector --latest 5 --sort rate --save /etc/pacman.d/mirrorlist"

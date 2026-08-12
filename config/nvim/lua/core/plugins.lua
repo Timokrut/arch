@@ -26,7 +26,7 @@ require("lazy").setup({
 	{ 'williamboman/mason.nvim' },
 
     {
-		'nvim-telescope/telescope.nvim', tag = '0.1.6',
+		'nvim-telescope/telescope.nvim', 
 		dependencies = { 'nvim-lua/plenary.nvim' }
 	},
 
@@ -42,7 +42,7 @@ require("lazy").setup({
 	},
 
 	{ 'Eandrju/cellular-automaton.nvim' },
-	{ 'norcalli/nvim-colorizer.lua' },
+    { "catgoose/nvim-colorizer.lua" },
 
 	{
 	    'nvim-lualine/lualine.nvim',
@@ -105,14 +105,6 @@ require("lazy").setup({
 	},
 
 	{ 'RRethy/vim-illuminate' },
-
-	{
-	    "vhyrro/luarocks.nvim",
-	    priority = 1001, -- this plugin needs to run before anything else
-	    opts = {
-	        rocks = { "magick" },
-	    },
-	},
 
 	{
 	 "folke/trouble.nvim",

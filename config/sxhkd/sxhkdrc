@@ -32,7 +32,7 @@ super + shift + {f,n,p,t,c,v,x,k,l,s,e,d}
 	pavucontrol, \
 	Telegram, \
 	setxkbmap -layout us; sh $HOME/bin/calculator, \
-	setxkbmap -layout us; alacritty -e sh $HOME/bin/timer}
+	setxkbmap -layout us; alacritty -e sh $HOME/bin/timer, \
 	sh $HOME/bin/xcolor-pick, \
 	alacritty -e calcurse, \
 	sh $HOME/bin/screen-lock, \
@@ -53,8 +53,8 @@ Print
     flameshot gui
 
 # get prices of BTC, ETH, ATOM
-ctrl + shift + c
-  sh $HOME/bin/crypto_prices
+#ctrl + shift + c
+#  sh $HOME/bin/crypto_prices
 
 #
 #
@@ -97,7 +97,7 @@ super + {grave,Tab}
 
 # send focus window to current desktop
 super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} '^{1-9,10}'
+	bspc {desktop -f,node -d} '{1-9,10}'
 
 #
 # preselect

@@ -1,3 +1,6 @@
+[general]
+import = ["/home/user/.config/alacritty/themes/custom.toml"]
+
 [font]
 builtin_box_drawing = true
 size = 17.0
