@@ -87,15 +87,10 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
     vim.bo[ev.buf].omnifunc = "v:lua.vim.lsp.omnifunc"
 
-    vim.keymap.set("n", "lD", vim.lsp.buf.declaration, opts)
-    vim.keymap.set("n", "ld", vim.lsp.buf.definition, opts)
-    vim.keymap.set("n", "lk", vim.lsp.buf.hover, opts)
-    vim.keymap.set("n", "i", vim.lsp.buf.implementation, opts)
-    vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, opts)
-
+    vim.keymap.set("n", "Ld", vim.lsp.buf.definition, opts)
+    vim.keymap.set("n", "Lk", vim.lsp.buf.hover, opts)
     vim.keymap.set({ "n", "v" }, "<space>r", vim.lsp.buf.code_action, opts)
     vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
-
     vim.keymap.set("n", "<space>f", function()
       vim.lsp.buf.format({ async = true })
     end, opts)
