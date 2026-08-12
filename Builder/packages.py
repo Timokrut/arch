@@ -115,7 +115,8 @@ DEV_PACKAGES = [
     "hexyl",  # Hex дампер
     "github-cli", # Удобное CLI для работы с github
     "tree-sitter-cli", "ripgrep", "fd", # Для nvim
-    "jdk-openjdk" # java dev kit
+    "jdk-openjdk", # java dev kit
+    "docker", "docker-compose" # контейнеризация
 ]
 
 AUR_PACKAGES = [
