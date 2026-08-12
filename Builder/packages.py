@@ -52,10 +52,8 @@ BASE_PACKAGES = [
     "pulseaudio-alsa",  # Управление ALSA
     "ueberzug",  # Используется для отображения превью изображений и прочего медиа-контента
     "xclip",  # Работа с буфером обмена используя терминал
-    # "breeze", # TODO: Deprecated
     "openvpn",  # Поддержка протокола OpenVPN
     "reflector",  # Получить последний список зеркал
-    # "uthash",  # TODO: Deprecated
     "slop",  # Получить координаты клика мыши
     "nano",  # Консольный редактор текста
     "lxappearance",  # Управления темами, иконками
@@ -65,13 +63,11 @@ BASE_PACKAGES = [
     "mpc",  # Минималистичный интерфейс командной строки для MPD
     "mpv",  # Просмотр видео
     "alsa-plugins", "alsa-utils",  # Плагины и утилиты для Alsa
-    # "alsa-tools",  # TODO: Deprecated
     "network-manager-applet", "networkmanager-openvpn",
     "gparted",  # Работа с носителями в системе
     "intel-ucode",  # Микрокод для процессоров intel
     "gnu-netcat",  # Утилиты для работы с сетью
     "usbutils",  # Утилиты для работы с USB-устройствами
-    # "python-pyalsa",  # TODO: Deprecated
     "sshfs",  # Монтирование удаленных SSH каталогов локально
     "netctl",  # Сетевой менеджер на основе CLI
     "openssh",  # Набор программ для поддержки SSH
@@ -81,7 +77,9 @@ BASE_PACKAGES = [
     "gthumb",  # Просмотр и редактирование изображений
     "gnome-disk-utility",  # Просмотр и редактирование дисков
     "spotify-launcher", # музыка тут
-    "discord" # мам это дискорд 
+    "discord", # мам это дискорд 
+    "nvidia-open-dkms", "nvidia-utils", "nvidia-settings", "linux-headers", # драйверы под нвидию
+    "pipewire-pulse", "wireplumber", # Для аудио
 ]
 
 DEV_PACKAGES = [
@@ -97,12 +95,9 @@ DEV_PACKAGES = [
     "keepassxc",  # Защищенный менеджер паролей
     "audacity",  # Работа со звуком
     "gufw",  # TODO: Deprecated
-    # "python-pywal",  # TODO: Deprecated
     "bleachbit",  # Софт для шрединга файлов и безопасной очистки системы
     "veracrypt",  # Создание криптоконтейнеров
     "homebank",  # Отслеживание финансов
-    # "touche",  # TODO: Deprecated
-    # "dconf-editor",  TODO: Deprecated
     "neovim",  # Консольный редактор кода
     "obs-studio",  # Запись видео и управление трансляциями
     "telegram-desktop",  # Мессенджер
@@ -120,6 +115,7 @@ DEV_PACKAGES = [
     "hexyl",  # Hex дампер
     "github-cli", # Удобное CLI для работы с github
     "tree-sitter-cli", "ripgrep", "fd", # Для nvim
+    "jdk-openjdk" # java dev kit
 ]
 
 AUR_PACKAGES = [
@@ -136,6 +132,7 @@ AUR_PACKAGES = [
     "light",  # TODO: Нужен для управления яркостью amd (bin/brightness)
     "google-chrome", # основной браузер 
     "visual-studio-code-bin", # сюда можно поставить LiveShare 
-    "amneziavpn-bin" # vpn 
+    "amneziavpn-bin", # vpn
+    "localsend", # airdrop аналог
 ]
 
