@@ -4,6 +4,7 @@ alias cls="clear"
 alias g="git"
 alias n="nvim"
 alias m="micro"
+alias r="ranger"
 alias cat="bat"
 alias ccat="bat --style=plain --paging=never"
 alias feh="feh --scale-down"
@@ -27,8 +28,8 @@ alias vacuum_time="journalctl --vacuum-time=2weeks"
 
 set -U fish_greeting
 set fish_color_command green
-set -gx EDITOR micro
-set -gx VISUAL micro
+set -gx EDITOR nvim 
+set -gx VISUAL nvim 
 set -gx BROWSER /usr/bin/firefox
 
 

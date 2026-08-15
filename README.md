@@ -38,7 +38,9 @@
 * A very lightweight system that consumes less than 700mb of memory.
 * Automatic installation and configuration of all basic software for development.
 
+**Interesting apps: [check](Interesting_Applications.md)** <br> 
 **And more features: [EN](Docs/03_all_features_and_tricks_english.md), [RU](Docs/02_all_features_and_tricks_russian.md)**
+
 
 <table align="center">
    <tr>

@@ -116,7 +116,9 @@ DEV_PACKAGES = [
     "github-cli", # Удобное CLI для работы с github
     "tree-sitter-cli", "ripgrep", "fd", # Для nvim
     "jdk-openjdk", # java dev kit
-    "docker", "docker-compose" # контейнеризация
+    "docker", "docker-compose",  # контейнеризация
+    "jq", # простая утилита для работы с json в терминале
+    "zenity", # утилита для создания меню опросов
 ]
 
 AUR_PACKAGES = [

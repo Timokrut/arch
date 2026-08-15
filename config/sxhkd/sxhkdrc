@@ -74,6 +74,10 @@ super + c
 super + space
 	bspc node -t "~"{floating,tiled}
 
+# open random video 
+super + ctrl + shift + p
+    python /home/user/bin/rv.py random
+
 #
 # state/flags
 #
